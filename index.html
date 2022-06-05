@@ -3,23 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./clear.css">
   <link rel="stylesheet" href="./style.css">  
 	<title>Practice isometric menu</title>
 </head>
 <body>
 
-  <div class="ring"></div>
+  <nav>  
+      <ul class="nav-list">
+        <li style="--i:5" class="nav-item one"><a class="nav-item-link" href="#">Home</a></li>
+        <li style="--i:4" class="nav-item two"><a class="nav-item-link" href="#">About</a></li>
+        <li style="--i:3" class="nav-item 3 "><a class="nav-item-link" href="#">Servises</a></li>
+        <li style="--i:2" class="nav-item 4 "><a class="nav-item-link" href="#">Portfolio</a></li>
+        <li style="--i:1" class="nav-item 5"><a class="nav-item-link" href="#">Contuct</a></li>
+      </ul>  
+  </nav>
 
-  <svg>
-    <filter id="wave">
-       <feTurbulence x="-40px" y="-40px"      
-        baseFrequency="0.02" numOctaves="5" seed="2">
-        <animate attributename="baseFrequency" dur="15" values="0.01 ; 0.02 ; 0.01" repeatCount="indefinite" />        
-      </feTurbulence>
-      <feDisplacementMap in="SourceGraphic" scale="30" />
-    </filter>    
-  </svg>
 	
 </body>
 </html>
